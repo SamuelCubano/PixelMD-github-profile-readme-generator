@@ -29,5 +29,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # CORRECCIÓN: Verifica si el nombre de la carpeta es pixel-md o similar
-          folder: dist/pixel-md/browser 
+          folder: dist/prueba/browser 
           branch: gh-pages # CORRECCIÓN: Usa una rama distinta a main
