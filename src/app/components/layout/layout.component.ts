@@ -10,7 +10,7 @@ import { ProfileService } from '../../services/profile.service';
         <div class="logo" (click)="reload()">Pixel<span>MD</span></div>
         <nav class="nav-menu">
           <a href="#" class="nav-link">Inicio</a>
-          <a href="https://icons-samuel.netlify.app/" target="_blank" class="nav-link">Samazu Icons</a>
+          <a href="https://icons-samuel.netlify.app/" target="_blank" class="nav-link">Samuel Icons</a>
         </nav>
         <div class="nav-utils">
           <button class="icon-btn" (click)="toggleTheme()" title="Cambiar modo">
