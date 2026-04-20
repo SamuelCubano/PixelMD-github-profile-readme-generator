@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main # Asegúrate de que este sea el nombre de tu rama principal
+      - main
 
 permissions:
   contents: write
@@ -17,15 +17,17 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # O la versión que estés usando
+          node-version: 20
 
       - name: Install and Build
         run: |
           npm install
-          npx ng build --configuration production --base-href /https://github.com/SamuelCubano/PixelMD-github-profile-readme-generator/
+          # CORRECCIÓN: Solo el nombre del repo entre barras
+          npx ng build --configuration production --base-href /PixelMD-github-profile-readme-generator/
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist/TU_PROYECTO_NAME/browser # Ajusta esta ruta según tu versión de Angular
-          branch: main
+          # CORRECCIÓN: Verifica si el nombre de la carpeta es pixel-md o similar
+          folder: dist/pixel-md/browser 
+          branch: gh-pages # CORRECCIÓN: Usa una rama distinta a main
