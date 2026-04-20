@@ -28,4 +28,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist/TU_PROYECTO_NAME/browser # Ajusta esta ruta según tu versión de Angular
-          branch: gh-pages
+          branch: main
