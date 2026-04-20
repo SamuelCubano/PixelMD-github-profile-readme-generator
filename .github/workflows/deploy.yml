@@ -1,0 +1,31 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main # Asegúrate de que este sea el nombre de tu rama principal
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # O la versión que estés usando
+
+      - name: Install and Build
+        run: |
+          npm install
+          npx ng build --configuration production --base-href /https://github.com/SamuelCubano/PixelMD-github-profile-readme-generator/
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist/TU_PROYECTO_NAME/browser # Ajusta esta ruta según tu versión de Angular
+          branch: gh-pages
