@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Prueba
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# PixelMD-github-profile-readme-generator
+Crea un README profesional para tu perfil de GitHub utilizando una herramienta visual inspirada en la simplicidad de los clásicos pixelados. Con una experiencia de usuario minimalista y detalles gamer, PixelMD te ayuda a estructurar tu información y hacer que tu repositorio principal destaque sobre la competencia.
+>>>>>>> 9ed8377415cf6ac1d71941b131565e534dc14dbe
