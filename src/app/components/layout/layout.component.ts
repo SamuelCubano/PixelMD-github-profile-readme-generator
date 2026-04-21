@@ -23,7 +23,7 @@ import { ProfileService } from '../../services/profile.service';
     <div class="repo-banner">
       <div class="banner-content">
         <i data-lucide="star" class="star-icon"></i>
-        <span>¿Te gusta PixelMD? <a href="https://github.com/tu-usuario/tu-repo" target="_blank">Apóyanos con una estrella en GitHub</a></span>
+        <span>¿Te gusta PixelMD? <a href="https://github.com/SamuelCubano/PixelMD-github-profile-readme-generator.git" target="_blank">Apóyanos con una estrella en GitHub</a></span>
       </div>
     </div>
   `,
