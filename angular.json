@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "prueba": {
+    "pixelmd": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "prueba:build:production"
+              "buildTarget": "pixelmd:build:production"
             },
             "development": {
-              "buildTarget": "prueba:build:development"
+              "buildTarget": "pixelmd:build:development"
             }
           },
           "defaultConfiguration": "development"
