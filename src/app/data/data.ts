@@ -67,7 +67,6 @@ export const techData: Tech[] = [
 
     // --- BACKEND AS A SERVICE (baas) ---
     { id: 'firebase', name: 'Firebase', category: 'baas' },
-    { id: 'supabase', name: 'Supabase', category: 'baas' }, // Lo agrego como sugerencia técnica
 
     // --- CLOUD & DEPLOYMENT (cloud) ---
     { id: 'aws', name: 'AWS', category: 'cloud' },
@@ -82,7 +81,6 @@ export const techData: Tech[] = [
     { id: 'terraform', name: 'Terraform', category: 'devops' },
     { id: 'ansible', name: 'Ansible', category: 'devops' },
     { id: 'jenkins', name: 'Jenkins', category: 'devops' },
-    { id: 'githubactions', name: 'GitHub Actions', category: 'devops' },
     { id: 'cloudformation', name: 'CloudFormation', category: 'devops' },
     { id: 'awssam', name: 'AWS Sam', category: 'devops' },
 
