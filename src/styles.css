@@ -369,9 +369,6 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 20px;
-  max-height: 400px;
-  overflow-y: auto;
-  display: flex;
   flex-direction: column;
   gap: 2rem;
 }
