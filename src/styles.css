@@ -38,7 +38,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;;
+  font-style: normal;
+  word-spacing: 0.15em;
+  
 }
 
 html {
@@ -79,7 +83,7 @@ body {
 }
 
 .logo {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 800;
   letter-spacing: -1.2px;
   cursor: pointer;
@@ -92,7 +96,7 @@ body {
 .nav-link {
   text-decoration: none;
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   font-weight: 500;
   transition: all 0.2s ease;
 }
@@ -120,7 +124,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
 }
 
 .banner-content {
@@ -143,8 +147,6 @@ body {
 }
 
 .star-icon {
-  width: 16px;
-  height: 16px;
   color: #e3b341;
 }
 
@@ -188,8 +190,8 @@ body {
 }
 
 .step-dot {
-  width: 15px;
-  height: 15px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: var(--bg-body);
   border: 3px solid var(--border);
@@ -197,8 +199,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   color: var(--text-muted);
   transition: all 0.4s ease;
   position: relative;
@@ -374,7 +375,7 @@ body {
 }
 
 .tech-category-section h4 {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -473,6 +474,7 @@ body {
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
+  font-size: 20px;
 }
 
 .next-btn, .generate-btn {
@@ -707,7 +709,6 @@ body {
   .step-title { font-size: 1.8rem; }
   .highlights-grid { grid-template-columns: 1fr; }
   .stepper-progress { margin-bottom: 2.5rem; }
-  .step-dot { width: 16px; height: 16px; font-size: 0.8rem; }
   .step-actions { flex-direction: column-reverse; gap: 1rem; }
   .btn-primary, .btn-outline, .back-btn, .next-btn { width: 100%; justify-content: center; }
   .modal-content { padding: 1.5rem; }
