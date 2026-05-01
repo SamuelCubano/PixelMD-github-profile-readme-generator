@@ -103,6 +103,7 @@ export const techData: Tech[] = [
     { id: 'libresprite', name: 'LibreSprite', category: 'tools' },
     { id: 'dbeaver', name: 'DBeaver', category: 'tools' },
     { id: 'toad', name: 'Toad', category: 'tools' },
+    { id: 'insomnia', name: 'Insomnia', category: 'tools' },
 
     // --- ARTIFICIAL INTELLIGENCE (ai) ---
     { id: 'openia', name: 'OpenAI', category: 'ai' },
@@ -115,6 +116,7 @@ export const techData: Tech[] = [
     { id: 'cursorai', name: 'Cursor AI', category: 'ai' },
     { id: 'claudecode', name: 'Claude Code', category: 'ai' },
     { id: 'githubcopilot', name: 'GitHub Copilot', category: 'ai' },
+    { id: 'ollama', name: 'Ollama', category: 'ai' },
 
     // --- FUN ICONS (fun) ---
   { id: 'pokeball', name: 'Pokeball', category: 'fun' },
