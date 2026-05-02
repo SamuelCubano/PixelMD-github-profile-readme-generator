@@ -90,6 +90,8 @@ export const techData: Tech[] = [
     { id: 'cloudformation', name: 'CloudFormation', category: 'devops' },
     { id: 'awssam', name: 'AWS Sam', category: 'devops' },
     { id: 'nginx', name: 'Nginx', category: 'devops' },
+    { id: 'prometheus', name: 'Prometheus', category: 'devops' },
+    { id: 'grafana', name: 'Grafana', category: 'devops' },
     
 
     // --- SOFTWARE TOOLS (tools) ---
@@ -104,6 +106,8 @@ export const techData: Tech[] = [
     { id: 'dbeaver', name: 'DBeaver', category: 'tools' },
     { id: 'toad', name: 'Toad', category: 'tools' },
     { id: 'insomnia', name: 'Insomnia', category: 'tools' },
+    { id: 'postman', name: 'Postman', category: 'tools' },
+    { id: 'biome', name: 'Biome', category: 'tools' },
 
     // --- ARTIFICIAL INTELLIGENCE (ai) ---
     { id: 'openia', name: 'OpenAI', category: 'ai' },
@@ -117,6 +121,8 @@ export const techData: Tech[] = [
     { id: 'claudecode', name: 'Claude Code', category: 'ai' },
     { id: 'githubcopilot', name: 'GitHub Copilot', category: 'ai' },
     { id: 'ollama', name: 'Ollama', category: 'ai' },
+    { id: 'langchain', name: 'LangChain', category: 'ai' },
+    { id: 'huggingface', name: 'Hugging Face', category: 'ai' },
 
     // --- FUN ICONS (fun) ---
   { id: 'pokeball', name: 'Pokeball', category: 'fun' },
