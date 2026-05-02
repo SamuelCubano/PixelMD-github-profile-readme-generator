@@ -15,6 +15,8 @@ export const techData: Tech[] = [
   // --- SISTEMAS OPERATIVOS (os) ---
     { id: 'linux', name: 'Linux', category: 'os' },
     { id: 'windows', name: 'Windows', category: 'os' },
+    { id: 'ios', name: 'iOS', category: 'os' },
+
 
     // --- PROGRAMMING LANGUAGES (languages) ---
     { id: 'javascript', name: 'JavaScript', category: 'languages' },
@@ -31,6 +33,8 @@ export const techData: Tech[] = [
     { id: 'dart', name: 'Dart', category: 'languages' },
     { id: 'bashscript', name: 'Bash Script', category: 'languages' },
     { id: 'go', name: 'Go', category: 'languages' },
+    { id: 'sql', name: 'SQL', category: 'languages' },
+    { id: 'swift', name: 'Swift', category: 'languages' },
 
     // --- FRONTEND DEVELOPMENT (frontend) ---
     { id: 'html5', name: 'HTML5', category: 'frontend' },
@@ -74,6 +78,8 @@ export const techData: Tech[] = [
     { id: 'digitalocean', name: 'DigitalOcean', category: 'cloud' },
     { id: 'vercel', name: 'Vercel', category: 'cloud' },
     { id: 'railway', name: 'Railway', category: 'cloud' },
+    { id: 'netlify', name: 'Netlify', category: 'cloud' },
+    { id: 'cloudflare', name: 'Cloudflare', category: 'cloud' },
 
     // --- DEVOPS (devops) ---
     { id: 'docker', name: 'Docker', category: 'devops' },
@@ -83,6 +89,10 @@ export const techData: Tech[] = [
     { id: 'jenkins', name: 'Jenkins', category: 'devops' },
     { id: 'cloudformation', name: 'CloudFormation', category: 'devops' },
     { id: 'awssam', name: 'AWS Sam', category: 'devops' },
+    { id: 'nginx', name: 'Nginx', category: 'devops' },
+    { id: 'prometheus', name: 'Prometheus', category: 'devops' },
+    { id: 'grafana', name: 'Grafana', category: 'devops' },
+    
 
     // --- SOFTWARE TOOLS (tools) ---
     { id: 'visualstudiocode', name: 'VS Code', category: 'tools' },
@@ -95,6 +105,9 @@ export const techData: Tech[] = [
     { id: 'libresprite', name: 'LibreSprite', category: 'tools' },
     { id: 'dbeaver', name: 'DBeaver', category: 'tools' },
     { id: 'toad', name: 'Toad', category: 'tools' },
+    { id: 'insomnia', name: 'Insomnia', category: 'tools' },
+    { id: 'postman', name: 'Postman', category: 'tools' },
+    { id: 'biome', name: 'Biome', category: 'tools' },
 
     // --- ARTIFICIAL INTELLIGENCE (ai) ---
     { id: 'openia', name: 'OpenAI', category: 'ai' },
@@ -107,6 +120,9 @@ export const techData: Tech[] = [
     { id: 'cursorai', name: 'Cursor AI', category: 'ai' },
     { id: 'claudecode', name: 'Claude Code', category: 'ai' },
     { id: 'githubcopilot', name: 'GitHub Copilot', category: 'ai' },
+    { id: 'ollama', name: 'Ollama', category: 'ai' },
+    { id: 'langchain', name: 'LangChain', category: 'ai' },
+    { id: 'huggingface', name: 'Hugging Face', category: 'ai' },
 
     // --- FUN ICONS (fun) ---
   { id: 'pokeball', name: 'Pokeball', category: 'fun' },
