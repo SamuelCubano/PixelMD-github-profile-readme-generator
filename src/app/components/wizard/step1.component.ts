@@ -8,57 +8,57 @@ import { ProfileService } from '../../services/profile.service';
   imports: [FormsModule],
   template: `
     <div class="step-content">
-      <h2 class="step-title">Cuéntanos sobre ti</h2>
-      <p class="step-description">Define cómo quieres que te vean en tu perfil de GitHub.</p>
+      <h2 class="step-title">Tell us about you</h2>
+      <p class="step-description">Define how you want to be seen on your GitHub profile.</p>
       
       <div class="form-group-huge">
-        <label for="greeting">Saludo Personalizado</label>
+        <label for="greeting">Custom Greeting</label>
         <input 
           type="text" 
           id="greeting" 
           [(ngModel)]="greeting" 
           (ngModelChange)="updateData()"
-          placeholder="Ej. Hey, I'm / Hola, soy / Welcome to..."
+          placeholder="E.g. Hey, I'm / Hello, I'm / Welcome to..."
         >
       </div>
 
       <div class="form-group-huge">
-        <label for="name">Nombre Artístico o Real</label>
+        <label for="name">Real or Artistic Name</label>
         <input 
           type="text" 
           id="name" 
           [(ngModel)]="name" 
           (ngModelChange)="updateData()"
-          placeholder="Ej. John Doe"
+          placeholder="E.g. John Doe"
         >
       </div>
       
       <div class="form-group-huge">
-        <label for="title">Tu Rol Principal</label>
+        <label for="title">Your Main Role</label>
         <input 
           type="text" 
           id="title" 
           [(ngModel)]="title" 
           (ngModelChange)="updateData()"
-          placeholder="Ej. UI/UX Designer & Frontend Developer"
+          placeholder="E.g. UI/UX Designer & Frontend Developer"
         >
       </div>
 
       <div class="form-group-huge">
-        <label for="bio">Una Bio Potente</label>
+        <label for="bio">A Powerful Bio</label>
         <textarea 
           id="bio" 
           rows="2" 
           [(ngModel)]="bio" 
           (ngModelChange)="updateData()"
-          placeholder="Descríbete en una frase..."
+          placeholder="Describe yourself in one sentence..."
         ></textarea>
       </div>
 
       <div class="step-actions">
         <div style="flex-grow: 1;"></div>
         <button class="next-btn" (click)="nextStep()">
-          Continuar <i data-lucide="arrow-right"></i>
+          Continue <i data-lucide="arrow-right"></i>
         </button>
       </div>
     </div>

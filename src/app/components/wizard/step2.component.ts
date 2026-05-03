@@ -9,13 +9,13 @@ import { CDN_URL, highlightedIcons } from '../../data/data';
   imports: [FormsModule],
   template: `
     <div class="step-content">
-      <h2 class="step-title">Tus Datos de Interés</h2>
-      <p class="step-description">Haz clic en cada icono para personalizarlo con estilo Pixel Art.</p>
+      <h2 class="step-title">Your Highlights</h2>
+      <p class="step-description">Click on each icon to customize it with Pixel Art style.</p>
       
       <div class="highlights-grid">
         @for (item of items; track item.key) {
           <div class="input-icon-wrapper">
-            <div class="icon-selector-trigger" (click)="openIconPicker(item.key)" title="Cambiar icono">
+            <div class="icon-selector-trigger" (click)="openIconPicker(item.key)" title="Change icon">
               <img [src]="getIcon(item.key)" alt="{{ item.key }}" class="pixel-bullet">
               <i data-lucide="chevron-down" class="mini-icon-indicator"></i>
             </div>
@@ -31,8 +31,8 @@ import { CDN_URL, highlightedIcons } from '../../data/data';
       </div>
 
       <div class="step-actions">
-        <button class="back-btn" (click)="prevStep()">Regresar</button>
-        <button class="next-btn" (click)="nextStep()">Siguiente <i data-lucide="arrow-right"></i></button>
+        <button class="back-btn" (click)="prevStep()">Back</button>
+        <button class="next-btn" (click)="nextStep()">Next <i data-lucide="arrow-right"></i></button>
       </div>
     </div>
   `,
@@ -41,11 +41,11 @@ export class Step2Component {
   private profileService = inject(ProfileService);
   
   items = [
-    { key: 'work', placeholder: '¿En qué trabajas actualmente?' },
-    { key: 'learning', placeholder: '¿Qué estás estudiando?' },
-    { key: 'collab', placeholder: '¿En qué quieres colaborar?' },
-    { key: 'featuredProject', placeholder: '¿Cuál es tu proyecto destacado?' },
-    { key: 'freeTime', placeholder: '¿En tu tiempo libre qué te gusta hacer?' },
+    { key: 'work', placeholder: 'What are you currently working on?' },
+    { key: 'learning', placeholder: 'What are you learning?' },
+    { key: 'collab', placeholder: 'What do you want to collaborate on?' },
+    { key: 'featuredProject', placeholder: 'What is your featured project?' },
+    { key: 'freeTime', placeholder: 'What do you like to do in your free time?' },
   ];
 
   getIcon(key: string): string {
