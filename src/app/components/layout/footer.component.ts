@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
         <div class="footer-logo">Pixel<span>MD</span></div>
         <p>Potenciando perfiles con estética Pixel Art.</p>
         <div class="footer-credits">
-          © 2026 Samuel Cubano • Hecho con <i data-lucide="heart" class="heart-icon"></i> desde Venezuela.
+            <span>© 2026</span> Samuel Cubano • Hecho con <i data-lucide="heart" class="heart-icon"></i> desde Venezuela.
         </div>
       </div>
     </footer>
