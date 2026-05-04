@@ -12,7 +12,7 @@ import { funIcons, CDN_URL } from '../../data/data';
       <div class="modal-overlay" (click)="closeOnOverlay($event)">
         <div class="modal-content">
           <div class="modal-header">
-            <h3>Seleccionar Icono</h3>
+            <h3>Select Icon</h3>
             <button class="close-modal" (click)="close()">
               <i data-lucide="x"></i>
             </button>
@@ -25,7 +25,7 @@ import { funIcons, CDN_URL } from '../../data/data';
                 id="modal-search" 
                 [(ngModel)]="searchTerm"
                 (ngModelChange)="onSearchChange()"
-                placeholder="Buscar icono..."
+                placeholder="Search icon..."
                 style="padding-left: 35px;"
               >
             </div>

@@ -6,8 +6,8 @@ import { ProfileService } from '../../services/profile.service';
   standalone: true,
   template: `
     <div class="step-content result-card">
-      <h2 class="step-title">¡Todo listo!</h2>
-      <p class="step-description">Copia el código y pégalo en tu README.md de GitHub.</p>
+      <h2 class="step-title">All set!</h2>
+      <p class="step-description">Copy the code and paste it into your GitHub README.md.</p>
       
       <div class="preview-container">
         <div class="preview-toolbar">
@@ -21,13 +21,13 @@ import { ProfileService } from '../../services/profile.service';
 
       <div class="export-actions">
         <button class="btn-primary" id="btn-copy" (click)="copyToClipboard()">
-          <i data-lucide="copy"></i> Copiar Código
+          <i data-lucide="copy"></i> Copy Code
         </button>
         <button class="btn-outline" (click)="downloadMD()">
-          <i data-lucide="download"></i> Descargar .md
+          <i data-lucide="download"></i> Download .md
         </button>
         <button class="btn-outline" style="border-style: dashed;" (click)="createAnother()">
-          <i data-lucide="rotate-ccw"></i> Crear otro
+          <i data-lucide="rotate-ccw"></i> Create Another
         </button>
       </div>
     </div>
@@ -43,9 +43,9 @@ export class Step5Component {
     navigator.clipboard.writeText(text).then(() => {
       const btn = document.getElementById('btn-copy');
       if (btn) {
-        btn.innerHTML = '<i data-lucide="check"></i> ¡Copiado!';
+        btn.innerHTML = '<i data-lucide="check"></i> Copied!';
         setTimeout(() => {
-          btn.innerHTML = '<i data-lucide="copy"></i> Copiar Código';
+          btn.innerHTML = '<i data-lucide="copy"></i> Copy Code';
         }, 2000);
       }
     });

@@ -9,8 +9,8 @@ import { techData, CDN_URL, githubThemes } from '../../data/data';
   imports: [FormsModule],
   template: `
     <div class="step-content">
-      <h2 class="step-title">Tu Arsenal Tecnológico</h2>
-      <p class="step-description">Selecciona las herramientas que dominas para tu stack.</p>
+      <h2 class="step-title">Your Tech Arsenal</h2>
+      <p class="step-description">Select the tools you master for your stack.</p>
 
       <div class="search-container">
         <div class="input-icon-wrapper search-bar">
@@ -20,7 +20,7 @@ import { techData, CDN_URL, githubThemes } from '../../data/data';
             id="tech-search" 
             [(ngModel)]="searchTerm"
             (ngModelChange)="onSearchChange()"
-            placeholder="Buscar tecnología (ej: React, PHP...)"
+            placeholder="Search technology (e.g. React, PHP...)"
           >
         </div>
       </div>
@@ -44,14 +44,14 @@ import { techData, CDN_URL, githubThemes } from '../../data/data';
         }
       </div>
 
-      <h3 class="sub-label" style="margin-top: 2rem;">Configuración de GitHub Stats</h3>
+      <h3 class="sub-label" style="margin-top: 2rem;">GitHub Stats Configuration</h3>
       <div class="stats-config-grid">
         <input 
           type="text" 
           id="in-github" 
           [(ngModel)]="githubUser"
           (ngModelChange)="updateGithub()"
-          placeholder="Tu usuario de GitHub"
+          placeholder="Your GitHub username"
         >
         <select 
           id="in-theme"
@@ -59,14 +59,14 @@ import { techData, CDN_URL, githubThemes } from '../../data/data';
           (ngModelChange)="updateGithub()"
         >
           @for (theme of themes; track theme.id) {
-            <option [value]="theme.id">Tema: {{ theme.name }}</option>
+            <option [value]="theme.id">Theme: {{ theme.name }}</option>
           }
         </select>
       </div>
 
       <div class="step-actions" style="margin-top: 2.5rem;">
-        <button class="back-btn" (click)="prevStep()">Regresar</button>
-        <button class="next-btn" (click)="nextStep()">Siguiente <i data-lucide="arrow-right"></i></button>
+        <button class="back-btn" (click)="prevStep()">Back</button>
+        <button class="next-btn" (click)="nextStep()">Next <i data-lucide="arrow-right"></i></button>
       </div>
     </div>
   `,

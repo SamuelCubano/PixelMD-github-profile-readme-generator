@@ -9,8 +9,8 @@ import { socialData, CDN_URL } from '../../data/data';
   imports: [FormsModule],
   template: `
     <div class="step-content">
-      <h2 class="step-title">Presencia Digital</h2>
-      <p class="step-description">Conecta tus redes sociales para que otros desarrolladores te encuentren.</p>
+      <h2 class="step-title">Digital Presence</h2>
+      <p class="step-description">Connect your social networks so other developers can find you.</p>
       
       <div class="highlights-grid">
         @for (social of socialData; track social.id) {
@@ -21,15 +21,15 @@ import { socialData, CDN_URL } from '../../data/data';
               [id]="'social-' + social.id"
               [ngModel]="getUrl(social.id)"
               (ngModelChange)="updateUrl(social.id, $event)"
-              [placeholder]="'Enlace a tu ' + social.name + '...'"
+              [placeholder]="'Your ' + social.name + ' link...'"
             >
           </div>
         }
       </div>
 
       <div class="step-actions" style="margin-top: 2.5rem;">
-        <button class="back-btn" (click)="prevStep()">Regresar</button>
-        <button class="generate-btn" id="btn-generate" (click)="generate()">Generar PixelMD ✨</button>
+        <button class="back-btn" (click)="prevStep()">Back</button>
+        <button class="generate-btn" id="btn-generate" (click)="generate()">Generate PixelMD ✨</button>
       </div>
     </div>
   `,
