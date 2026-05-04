@@ -207,7 +207,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  <img src="https://icons-samuel.netlify.app/heart.png" width="32" height="32" style="image-rendering: pixelated;">
+  <img src="https://icons-samuel.netlify.app/heart.png" width="32" height="32">
   <br>
   <em>Made with love for the developer community</em>
 </p>
