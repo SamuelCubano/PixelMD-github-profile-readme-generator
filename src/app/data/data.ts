@@ -130,6 +130,11 @@ export const techData: Tech[] = [
   { id: 'zelda', name: 'Zelda', category: 'fun' },
   { id: 'diamond_sword_minecraft', name: 'Diamond Sword', category: 'fun' },
   { id: 'console_control', name: 'Console', category: 'fun' },
+  { id: 'coffee', name: 'Coffee', category: 'fun' },
+  { id: 'headphones', name: 'Headphones', category: 'fun' },
+  { id: 'midheart', name: 'Midheart', category: 'fun' },
+  { id: 'fullheart', name: 'Fullheart', category: 'fun' },
+  { id: 'emptyheart', name: 'Emptyheart', category: 'fun' },
 ];
 
 export const funIcons = techData.filter(t => t.category === 'fun');

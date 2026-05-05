@@ -32,7 +32,7 @@ import { Component } from '@angular/core';
           </div>
         </div>
         <div class="footer-credits">
-          <span>© 2026</span> Samuel Cubano • Made with <i data-lucide="heart" class="heart-icon"></i> from Venezuela.
+          <span>© 2026</span> Samuel Cubano • Made with <img src="https://icons-samuel.netlify.app/fullheart.png" width="19" height="19" style="image-rendering: pixelated;"> from Venezuela.
         </div>
       </div>
     </footer>
