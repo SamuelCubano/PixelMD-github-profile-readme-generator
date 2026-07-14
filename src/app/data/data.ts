@@ -4,6 +4,11 @@ export interface Tech {
   id: string;
   name: string;
   category: string;
+  ext?: string;
+}
+
+export function getIconUrl(id: string, ext?: string): string {
+  return `${CDN_URL}/${id}.${ext || 'png'}`;
 }
 
 export interface Social {
@@ -41,6 +46,7 @@ export const techData: Tech[] = [
     { id: 'css3', name: 'CSS3', category: 'frontend' },
     { id: 'bootstrap', name: 'Bootstrap', category: 'frontend' },
     { id: 'tailwindcss', name: 'TailwindCSS', category: 'frontend' },
+    { id: 'leaflet', name: 'Leaflet', category: 'frontend', ext: 'webp' },
 
     // --- BACKEND DEVELOPMENT (backend) ---
     { id: 'nodejs', name: 'Node.js', category: 'backend' },
@@ -68,6 +74,7 @@ export const techData: Tech[] = [
     { id: 'redis', name: 'Redis', category: 'database' },
     { id: 'firestore', name: 'Firestore', category: 'database' },
     { id: 'dynamodb', name: 'DynamoDB', category: 'database' },
+    { id: 'supabase', name: 'Supabase', category: 'database', ext: 'webp' },
 
     // --- BACKEND AS A SERVICE (baas) ---
     { id: 'firebase', name: 'Firebase', category: 'baas' },
@@ -123,6 +130,7 @@ export const techData: Tech[] = [
     { id: 'ollama', name: 'Ollama', category: 'ai' },
     { id: 'langchain', name: 'LangChain', category: 'ai' },
     { id: 'huggingface', name: 'Hugging Face', category: 'ai' },
+    { id: 'opencode', name: 'OpenCode', category: 'ai', ext: 'webp' },
 
     // --- FUN ICONS (fun) ---
   { id: 'pokeball', name: 'Pokeball', category: 'fun' },
