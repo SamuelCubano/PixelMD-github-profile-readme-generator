@@ -172,8 +172,12 @@ We love contributions! Here's how you can help make PixelMD even better:
 If you want to add new pixel art icons:
 - Icons should be 64x64 pixels
 - Use a pixel art style consistent with existing icons
-- Export as PNG with transparent background
+- Export as PNG or WebP with transparent background
 - Add the icon entry to `src/app/data/data.ts`
+- If your icon is WebP, add `ext: 'webp'` to the entry (defaults to `png`):
+  ```ts
+  { id: 'myicon', name: 'My Icon', category: 'tools', ext: 'webp' }
+  ```
 
 ---
 

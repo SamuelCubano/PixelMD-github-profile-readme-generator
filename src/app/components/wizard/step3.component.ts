@@ -1,7 +1,7 @@
 import { Component, inject, computed, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ProfileService } from '../../services/profile.service';
-import { techData, CDN_URL, githubThemes } from '../../data/data';
+import { techData, CDN_URL, getIconUrl, githubThemes } from '../../data/data';
 
 @Component({
   selector: 'app-step3',
@@ -36,7 +36,7 @@ import { techData, CDN_URL, githubThemes } from '../../data/data';
                   [class.selected]="isSelected(tech.id)"
                   (click)="toggleTech(tech)"
                 >
-                  <img [src]="cdnUrl + '/' + tech.id + '.png'" [alt]="tech.name">
+                   <img [src]="getIconUrl(tech.id, tech.ext)" [alt]="tech.name">
                 </div>
               }
             </div>
@@ -75,6 +75,7 @@ export class Step3Component implements OnInit {
   private profileService = inject(ProfileService);
   
   readonly cdnUrl = CDN_URL;
+  readonly getIconUrl = getIconUrl;
   readonly themes = githubThemes;
 
   searchTerm = '';

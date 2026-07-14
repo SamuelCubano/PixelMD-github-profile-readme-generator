@@ -1,5 +1,5 @@
 import { Injectable, signal, computed, effect } from '@angular/core';
-import { Tech, CDN_URL, highlightedIcons, githubThemes } from '../data/data';
+import { Tech, CDN_URL, getIconUrl, highlightedIcons, githubThemes } from '../data/data';
 
 export interface ProfileData {
   greeting: string;
@@ -184,7 +184,7 @@ export class ProfileService {
       md += `  <strong>My Stack & Tools</strong>\n`;
       md += `  <br /><br />\n`;
       for (const tech of stack) {
-        md += `  <img src="${CDN_URL}/${tech.id}.png" alt="${tech.name}" width="50" style="image-rendering: pixelated; margin: 5px;" />\n`;
+        md += `  <img src="${getIconUrl(tech.id, tech.ext)}" alt="${tech.name}" width="50" style="image-rendering: pixelated; margin: 5px;" />\n`;
       }
       md += `</p>\n\n`;
     }
