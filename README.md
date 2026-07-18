@@ -26,12 +26,10 @@
 
 <div align="center">
   <h3>Light Mode</h3>
-  <!-- Add your light mode screenshot here -->
-  <img src="PATH_TO_YOUR_LIGHT_MODE_SCREENSHOT.png" alt="PixelMD Light Mode" width="800">
+  <img src="public/assets/img/lightmode.PNG" alt="PixelMD Light Mode" width="800">
   
   <h3 style="margin-top: 2rem;">Dark Mode</h3>
-  <!-- Add your dark mode screenshot here -->
-  <img src="PATH_TO_YOUR_DARK_MODE_SCREENSHOT.png" alt="PixelMD Dark Mode" width="800">
+  <img src="public/assets/img/darkmode.PNG" alt="PixelMD Dark Mode" width="800">
 </div>
 
 ---
