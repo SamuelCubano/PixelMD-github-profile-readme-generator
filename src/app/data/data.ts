@@ -131,6 +131,7 @@ export const techData: Tech[] = [
     { id: 'langchain', name: 'LangChain', category: 'ai' },
     { id: 'huggingface', name: 'Hugging Face', category: 'ai' },
     { id: 'opencode', name: 'OpenCode', category: 'ai', ext: 'webp' },
+    { id: 'kilocode', name: 'KiloCode', category: 'ai' },
 
     // --- FUN ICONS (fun) ---
   { id: 'pokeball', name: 'Pokeball', category: 'fun' },
@@ -143,6 +144,7 @@ export const techData: Tech[] = [
   { id: 'midheart', name: 'Midheart', category: 'fun' },
   { id: 'fullheart', name: 'Fullheart', category: 'fun' },
   { id: 'emptyheart', name: 'Emptyheart', category: 'fun' },
+  { id: 'valorant', name: 'Valorant', category: 'fun', ext: 'webp'},
 ];
 
 export const funIcons = techData.filter(t => t.category === 'fun');
