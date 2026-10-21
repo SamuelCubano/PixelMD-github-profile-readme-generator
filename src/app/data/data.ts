@@ -47,6 +47,7 @@ export const techData: Tech[] = [
     { id: 'bootstrap', name: 'Bootstrap', category: 'frontend' },
     { id: 'tailwindcss', name: 'TailwindCSS', category: 'frontend' },
     { id: 'leaflet', name: 'Leaflet', category: 'frontend', ext: 'webp' },
+    { id: 'gsap', name: 'GSAP', category: 'frontend', ext: 'webp' },
 
     // --- BACKEND DEVELOPMENT (backend) ---
     { id: 'nodejs', name: 'Node.js', category: 'backend' },
@@ -115,6 +116,7 @@ export const techData: Tech[] = [
     { id: 'insomnia', name: 'Insomnia', category: 'tools' },
     { id: 'postman', name: 'Postman', category: 'tools' },
     { id: 'biome', name: 'Biome', category: 'tools' },
+    { id: 'openstreetmap', name: 'OpenStreetMap', category: 'tools', ext: 'webp'},
 
     // --- ARTIFICIAL INTELLIGENCE (ai) ---
     { id: 'openia', name: 'OpenAI', category: 'ai' },
